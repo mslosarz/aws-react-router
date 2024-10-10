@@ -29,6 +29,7 @@ wait_stack_update_completed() {
 build_app() {
   $NVM_DIR/nvm.sh install 20
   $NVM_DIR/nvm.sh use 20
+  npm ci
   npm run build || exit 1
 }
 
